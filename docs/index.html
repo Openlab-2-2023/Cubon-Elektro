@@ -114,15 +114,33 @@
         .nav-item:hover .submenu {
             display: block;
         }
+        .image-gallery {
+            display: flex;
+            gap: 10px;
+        }
+        .image-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-item img{
+            width: 450px;
+            height: auto;
+        }
+        .image-item p {
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
 
 <header>
     <div class="language-flags">
-        <img src="/images/Snímka obrazovky 2024-10-22 094537.png" alt="Slovakia">
-        <img src="/images/Snímka obrazovky 2024-10-22 094548.png" alt="Czech">
-        <img src="/images/Snímka obrazovky 2024-10-22 094559.png" alt="Hungary">
+        <img src="images/Snímka obrazovky 2024-10-29 080231.png" alt="Slovakia">
+        <img src="images/Snímka obrazovky 2024-10-29 080238.png" alt="Czech">
+        <img src="images/Snímka obrazovky 2024-10-29 080245.png" alt="Hungary">
     </div>
     <div class="search-bar">
         <input type="text" placeholder="Hľadaný výraz">
@@ -278,4 +296,21 @@
 
 
 </body>
+<Body>
+    <div class="image-gallery">
+        <div class="image-item">
+            <img src="images/Snímka obrazovky 2024-11-14 082113.png" alt="Iphone 15 ">
+            <p>Iphone 15 128Gb</p>
+        </div>
+        <div class="image-item">
+            <img src="images/Snímka obrazovky 2024-11-14 082047.png" alt="Playstation 5">
+            <p>Playstation 5 </p>
+        </div>
+        <div class="image-item">
+            <img src="images/Snímka obrazovky 2024-11-14 091054.png" alt="Xbox Series S">
+            <p>Xbox Series S</p>
+        </div>
+    </div>
+    
+</Body>
 </html>
