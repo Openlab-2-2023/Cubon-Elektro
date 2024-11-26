@@ -194,12 +194,12 @@
             <h3>Mobilné telefóny</h3>
             <div class="grid">
                 <a href="#" class="bazar">bazár</a>
-                <a href="#">Apple</a>
-                <a href="#">Samsung</a>
-                <a href="#">Xiaomi</a>
-                <a href="#">Motorola</a>
-                <a href="#">Poco</a>
-                <a href="#">Honor</a>
+                <a href="#" onclick="filterProducts('apple')">Apple</a>
+                <a href="#" onclick="filterProducts('samsung')">Samsung</a>
+                <a href="#" onclick="filterProducts('xiaomi')">Xiaomi</a>
+                <a href="#" onclick="filterProducts('motorola')">Motorola</a>
+                <a href="#" onclick="filterProducts('poco')">Poco</a>
+                <a href="#" onclick="filterProducts('honor')">Honor</a>
             </div>
         </div>
     </div>
@@ -298,19 +298,40 @@
 </body>
 <Body>
     <div class="image-gallery">
-        <div class="image-item">
-            <img src="images/Snímka obrazovky 2024-11-14 082113.png" alt="Iphone 15 ">
+        <div class="image-item" data-brand="apple">
+            <img src="images/Snímka obrazovky 2024-11-14 082113.png" alt="Iphone 15">
             <p>Iphone 15 128Gb</p>
         </div>
-        <div class="image-item">
+        <div class="image-item" data-brand="playstation">
             <img src="images/Snímka obrazovky 2024-11-14 082047.png" alt="Playstation 5">
-            <p>Playstation 5 </p>
+            <p>Playstation 5</p>
         </div>
-        <div class="image-item">
+        <div class="image-item" data-brand="xbox">
             <img src="images/Snímka obrazovky 2024-11-14 091054.png" alt="Xbox Series S">
             <p>Xbox Series S</p>
         </div>
+        <div class="image-item" data-brand="samsung">
+            <img src="images/samsung-phone.png" alt="Samsung Galaxy">
+            <p>Samsung Galaxy S23</p>
+        </div>
+        <div class="image-item" data-brand="xiaomi">
+            <img src="images/xiaomi-phone.png" alt="Xiaomi Redmi">
+            <p>Xiaomi Redmi Note 12</p>
+        </div>
     </div>
+    
+    <script>
+        function filterProducts(brand) {
+            const items = document.querySelectorAll('.image-item');
+            items.forEach(item => {
+                if (item.getAttribute('data-brand') === brand || brand === 'all') {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
     
 </Body>
 </html>
