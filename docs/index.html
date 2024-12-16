@@ -4,137 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herny Obchod</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #f5f5f5;
-            padding: 10px 20px;
-        }
-        .language-flags {
-            display: flex;
-            gap: 10px;
-        }
-        .language-flags img {
-            width: 25px;
-            height: 25px;     
-        }
-        .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-        }
-        .search-bar {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .search-bar input {
-            padding: 5px;
-            font-size: 16px;
-        }
-        .cart-button {
-            background-color: #feca00;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        nav {
-            display: flex;
-            gap: 10px;
-            justify-content: space-between;
-            background-color: #0070b6;
-            padding: 10px;
-            position: relative;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            background-color: #ffd800;
-            font-weight: bold;
-        }
-        nav a.electronics {
-            background-color: #c6007e;
-        }
-
-      
-        .nav-item {
-            position: relative; 
-        }
-        .submenu {
-            display: none;
-            position: absolute;
-            background-color: white;
-            border: 1px solid #ddd;
-            padding: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            min-width: 300px;
-            top: 100%;
-            left: 0; 
-        }
-        .submenu h3 {
-            font-size: 1em;
-            font-weight: bold;
-            margin: 0 0 10px 0;
-        }
-        .submenu a {
-            color: #333;
-            text-decoration: none;
-            font-size: 0.9em;
-            padding: 5px 0;
-        }
-        .submenu a.bazar {
-            background-color: #c6007e;
-            color: white;
-            padding: 3px 7px;
-            border-radius: 5px;
-            margin-bottom: 5px;
-            display: inline-block;
-        }
-
-      
-        .submenu .grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); 
-            gap: 10px;
-        }
-
-        .nav-item:hover .submenu {
-            display: block;
-        }
-        .image-gallery {
-            display: flex;
-            gap: 10px;
-        }
-        .image-item{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .image-item img{
-            width: 450px;
-            height: auto;
-        }
-        .image-item p {
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
 
 <header>
     <div class="language-flags">
@@ -194,7 +67,7 @@
             <h3>Mobilné telefóny</h3>
             <div class="grid">
                 <a href="#" class="bazar">bazár</a>
-                <a href="#" onclick="filterProducts('apple')">Apple</a>
+                <a href="apple.html">Apple</a>
                 <a href="#" onclick="filterProducts('samsung')">Samsung</a>
                 <a href="#" onclick="filterProducts('xiaomi')">Xiaomi</a>
                 <a href="#" onclick="filterProducts('motorola')">Motorola</a>
@@ -203,19 +76,20 @@
             </div>
         </div>
     </div>
-
+   
+    </div>
     <div class="nav-item">
         <a href="#">NOTEBOOKY A PC</a>
         <div class="submenu">
             <h3>Notebooky a PC</h3>
             <div class="grid">
                 <a href="#" class="bazar">bazár</a>
-                <a href="#">Dell</a>
-                <a href="#">HP</a>
-                <a href="#">Lenovo</a>
-                <a href="#">Acer</a>
-                <a href="#">Asus</a>
-                <a href="#">Apple</a>
+                <a href="#" onclick="filterProducts('dell')">Dell</a>
+                <a href="notebooky.html">HP</a>
+                <a href="#" onclick="filterProducts('lenovo')">Lenovo</a>
+                <a href="#" onclick="filterProducts('acer')">Acer</a>
+                <a href="#" onclick="filterProducts('asus')">Asus</a>
+                <a href="#" onclick="filterProducts('apple')">Apple</a>
             </div>
         </div>
     </div>
@@ -226,11 +100,11 @@
             <h3>Playstation</h3>
             <div class="grid">
                 <a href="#" class="bazar">bazár</a>
-                <a href="#">PS5</a>
-                <a href="#">PS4</a>
-                <a href="#">PS VR</a>
-                <a href="#">Hry</a>
-                <a href="#">Príslušenstvo</a>
+                <a href="PlayStation.html">PS5</a>
+                <a href="#" onclick="filterProducts('ps4')">PS4</a>
+                <a href="#" onclick="filterProducts('ps vr')">PS VR</a>
+                <a href="#" onclick="filterProducts('hry')">Hry</a>
+                <a href="#" onclick="filterProducts('príslušenstvo')">Príslušenstvo</a>
             </div>
         </div>
     </div>
@@ -241,11 +115,11 @@
             <h3>Xbox</h3>
             <div class="grid">
                 <a href="#" class="bazar">bazár</a>
-                <a href="#">Xbox Series X</a>
-                <a href="#">Xbox Series S</a>
-                <a href="#">Xbox One</a>
-                <a href="#">Hry</a>
-                <a href="#">Príslušenstvo</a>
+                <a href="#" onclick="filterProducts('xbox series x')">Xbox Series X</a>
+                <a href="#" onclick="filterProducts('xbox series s')">Xbox Series S</a>
+                <a href="#" onclick="filterProducts('xbox one')">Xbox One</a>
+                <a href="#" onclick="filterProducts('hry')">Hry</a>
+                <a href="#" onclick="filterProducts('príslušenstvo')">Príslušenstvo</a>
             </div>
         </div>
     </div>
@@ -256,10 +130,10 @@
             <h3>Nintendo</h3>
             <div class="grid">
                 <a href="#" class="bazar">bazár</a>
-                <a href="#">Switch</a>
-                <a href="#">3DS</a>
-                <a href="#">Hry</a>
-                <a href="#">Príslušenstvo</a>
+                <a href="#" onclick="filterProducts('switch')">Switch</a>
+                <a href="#" onclick="filterProducts('3ds')">3DS</a>
+                <a href="#" onclick="filterProducts('hry')">Hry</a>
+                <a href="#" onclick="filterProducts('príslušenstvo')">Príslušenstvo</a>
             </div>
         </div>
     </div>
@@ -270,10 +144,10 @@
             <h3>Merch</h3>
             <div class="grid">
                 <a href="#" class="bazar">bazár</a>
-                <a href="#">Figúrky</a>
-                <a href="#">Tričká</a>
-                <a href="#">Hrnčeky</a>
-                <a href="#">Kľúčenky</a>
+                <a href="#" onclick="filterProducts('figúrky')">Figúrky</a>
+                <a href="#" onclick="filterProducts('tričká')">Tričká</a>
+                <a href="#" onclick="filterProducts('hrnčeky')">Hrnčeky</a>
+                <a href="#" onclick="filterProducts('kľúčenky')">Kľúčenky</a>
             </div>
         </div>
     </div>
@@ -284,11 +158,11 @@
             <h3>Elektronika</h3>
             <div class="grid">
                 <a href="#" class="bazar">bazár</a>
-                <a href="#">Slúchadlá</a>
-                <a href="#">Reproduktory</a>
-                <a href="#">Smart hodinky</a>
-                <a href="#">Tablety</a>
-                <a href="#">Príslušenstvo</a>
+                <a href="#" onclick="filterProducts('slúchadlá')">Slúchadlá</a>
+                <a href="#" onclick="filterProducts('reproduktory')">Reproduktory</a>
+                <a href="#" onclick="filterProducts('smart hodinky')">Smart hodinky</a>
+                <a href="#" onclick="filterProducts('tablety')">Tablety</a>
+                <a href="#" onclick="filterProducts('príslušenstvo')">Príslušenstvo</a>
             </div>
         </div>
     </div>
@@ -297,29 +171,35 @@
 
 </body>
 <Body>
-    <div class="image-gallery">
+    <div class="image-container">
         <div class="image-item" data-brand="apple">
-            <img src="images/Snímka obrazovky 2024-11-14 082113.png" alt="Iphone 15">
-            <p>Iphone 15 128Gb</p>
+            <img src="images/2166557.jpg" alt="Iphone 15">
+            <h3>Iphone 15 128Gb</h3>
         </div>
-        <div class="image-item" data-brand="playstation">
-            <img src="images/Snímka obrazovky 2024-11-14 082047.png" alt="Playstation 5">
-            <p>Playstation 5</p>
+        <div class="image-item" data-brand="playstation 5">
+            <img src="images/1212229.jpg" alt="Playstation 5">
+            <h3>Playstation 5</h3>
         </div>
-        <div class="image-item" data-brand="xbox">
-            <img src="images/Snímka obrazovky 2024-11-14 091054.png" alt="Xbox Series S">
-            <p>Xbox Series S</p>
+        <div class="image-item" data-brand="xbox series s">
+            <img src="images/1255797.jpg" alt="Xbox Series S">
+            <h3>Xbox Series S</h3>
         </div>
-        <div class="image-item" data-brand="samsung">
-            <img src="images/samsung-phone.png" alt="Samsung Galaxy">
-            <p>Samsung Galaxy S23</p>
+        <div class="image-item" data-brand="nintendo switch">
+            <img src="images/1057831.jpg" alt="Nintendo Switch">
+            <h3>Nintendo Switch</h3>
         </div>
-        <div class="image-item" data-brand="xiaomi">
-            <img src="images/xiaomi-phone.png" alt="Xiaomi Redmi">
-            <p>Xiaomi Redmi Note 12</p>
+        <div class="image-item" data-brand="hp victus">
+            <img src="images/victus.jpg" alt="HP Victus ">
+            <h3>HP Victus</h3>
+        </div>
+        <div class="image-item" data-brand="reproduktory">
+            <img src="images/charge 5.jpg" alt="JBL Charge 5">
+            <h3>JBL Charge 5</h3>
         </div>
     </div>
-    
+
+    </div>
+
     <script>
         function filterProducts(brand) {
             const items = document.querySelectorAll('.image-item');

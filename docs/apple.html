@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobily Apple</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="language-flags">
+            <img src="images/Snímka obrazovky 2024-10-29 080231.png" alt="Slovakia">
+            <img src="images/Snímka obrazovky 2024-10-29 080238.png" alt="Czech">
+            <img src="images/Snímka obrazovky 2024-10-29 080245.png" alt="Hungary">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Hľadaný výraz">
+            <button>Hľadať</button>
+        </div>
+        <button class="cart-button">Košík</button>
+    </header>
+
+    <div class="nav-links">
+        <a href="index.html">Domov</a>
+        <a href="#">Predajne</a>
+        <a href="#">Informácie</a>
+        <a href="#">Výkup</a>
+        <a href="#">Servis</a>
+    </div>
+
+    <nav>
+        <div class="nav-item">
+            <a href="index.html">MOBILY</a>
+            <div class="submenu">
+                <h3>Mobilné telefóny</h3>
+                <div class="grid">
+                    <a href="#" class="bazar">bazár</a>
+                    <a href="apple.html">Apple</a>
+                    <a href="#" onclick="filterProducts('samsung')">Samsung</a>
+                    <a href="#" onclick="filterProducts('xiaomi')">Xiaomi</a>
+                    <a href="#" onclick="filterProducts('motorola')">Motorola</a>
+                    <a href="#" onclick="filterProducts('poco')">Poco</a>
+                    <a href="#" onclick="filterProducts('honor')">Honor</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item">
+            <a href="#">NOTEBOOKY A PC</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">PLAYSTATION</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">XBOX</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">NINTENDO</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">MERCH</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">ELEKTRONIKA</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="image-container">
+            <div class="image-item" data-brand="apple">
+                <img src="images/2166557.jpg" alt="Iphone 15">
+                <h3>Iphone 15 128Gb</h3>
+            </div>
+            <div class="image-item" data-brand="apple">
+                <img src="images/1858935.jpg" alt="Iphone 14">
+                <h3>Iphone 14 128Gb</h3>
+            </div>
+            <div class="image-item" data-brand="apple">
+                <img src="images/3160967.jpg" alt="Iphone 16 Pro">
+                <h3>Iphone 16 Pro 128Gb</h3>
+            </div>
+            <div class="image-item" data data-brand="apple">
+                <img src="images/Iphone 11.jpg" alt="Iphone 11">
+                <h3>Iphone 11 64Gb</h3>
+            </div>
+            <div class="image-item" data-brand="apple">
+                <img src="images/Iphone X.jpg" alt="Iphone X">
+                <h3>Iphone X 256Gb</h3>
+            </div>
+            <div class="image-item" data-brand="apple">
+                <img src="images/Iphone 12 pro max.jpg" alt="Iphone 12 Pro Max">
+                <h3>Iphone 12 Pro Max</h3>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

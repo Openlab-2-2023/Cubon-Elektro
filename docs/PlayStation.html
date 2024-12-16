@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playstation 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="language-flags">
+            <img src="images/Snímka obrazovky 2024-10-29 080231.png" alt="Slovakia">
+            <img src="images/Snímka obrazovky 2024-10-29 080238.png" alt="Czech">
+            <img src="images/Snímka obrazovky 2024-10-29 080245.png" alt="Hungary">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Hľadaný výraz">
+            <button>Hľadať</button>
+        </div>
+        <button class="cart-button">Košík</button>
+    </header>
+
+    <div class="nav-links">
+        <a href="index.html">Domov</a>
+        <a href="#">Predajne</a>
+        <a href="#">Informácie</a>
+        <a href="#">Výkup</a>
+        <a href="#">Servis</a>
+    </div>
+
+    <nav>
+        <div class="nav-item">
+            <a href="#">MOBILY</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">NOTEBOOKY A PC</a>
+        </div>
+        <div class="nav-item">
+            <a href="index.html">PLAYSTATION</a>
+            <div class="submenu">
+                <h3>Playstation</h3>
+                <div class="grid">
+                    <a href="#" class="bazar">bazár</a>
+                    <a href="PlayStation.html">PS5</a>
+                    <a href="#" onclick="filterProducts('ps4')">PS4</a>
+                    <a href="#" onclick="filterProducts('ps vr')">PS VR</a>
+                    <a href="#" onclick="filterProducts('hry')">Hry</a>
+                    <a href="#" onclick="filterProducts('príslušenstvo')">Príslušenstvo</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item">
+            <a href="#">XBOX</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">NINTENDO</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">MERCH</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">ELEKTRONIKA</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="image-container">
+            <div class="image-item" data-brand="ps5">
+                <img src="images/1212229.jpg" alt="Playstation 5">
+                <h3>Playstation 5</h3>
+            </div>
+            <div class="image-item" data-brand="ps5">
+                <img src="images/slim.jpg" alt="PlayStation 5 Slim">
+                <h3>Playstation 5 Slim</h3>
+            </div>
+            <div class="image-item" data-brand="ps5">
+                <img src="images/Fifa.jpg" alt="PlayStation 5 + Fifa 23">
+                <h3>Playstation 5 + Fifa 23</h3>
+            </div>
+            <div class="image-item" data data-brand="ps5">
+                <img src="images/digital.jpg" alt="PlayStation 5 Digital Edition">
+                <h3>Playstation 5 Digital Edition</h3>
+            </div>
+            <div class="image-item" data-brand="ps5">
+                <img src="images/PRO 5.jpg" alt="PlayStation 5 Pro">
+                <h3>Playstation 5 Pro</h3>
+            </div>
+            <div class="image-item" data-brand="ps5">
+                <img src="images/Ragnarok.jpg" alt="PlayStation 5 + God of War Ragnarök">
+                <h3>Playstation 5 + God of War Ragnarök</h3>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

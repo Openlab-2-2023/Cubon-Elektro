@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hp Notebooky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="language-flags">
+            <img src="images/Snímka obrazovky 2024-10-29 080231.png" alt="Slovakia">
+            <img src="images/Snímka obrazovky 2024-10-29 080238.png" alt="Czech">
+            <img src="images/Snímka obrazovky 2024-10-29 080245.png" alt="Hungary">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Hľadaný výraz">
+            <button>Hľadať</button>
+        </div>
+        <button class="cart-button">Košík</button>
+    </header>
+
+    <div class="nav-links">
+        <a href="index.html">Domov</a>
+        <a href="#">Predajne</a>
+        <a href="#">Informácie</a>
+        <a href="#">Výkup</a>
+        <a href="#">Servis</a>
+    </div>
+
+    <nav>
+        <div class="nav-item">
+            <a href="#">MOBILY</a>
+        </div>
+        <div class="nav-item">
+            <a href="index.html">NOTEBOOKY A PC</a>
+            <div class="submenu">
+                <h3>Notebooky a PC</h3>
+                <div class="grid">
+                    <a href="#" class="bazar">bazár</a>
+                    <a href="#" onclick="filterProducts('dell')">Dell</a>
+                    <a href="notebooky.html">HP</a>
+                    <a href="#" onclick="filterProducts('lenovo')">Lenovo</a>
+                    <a href="#" onclick="filterProducts('acer')">Acer</a>
+                    <a href="#" onclick="filterProducts('asus')">Asus</a>
+                    <a href="#" onclick="filterProducts('apple')">Apple</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-item">
+            <a href="#">PLAYSTATION</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">XBOX</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">NINTENDO</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">MERCH</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">ELEKTRONIKA</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="image-container">
+            <div class="image-item" data-brand="hp">
+                <img src="images/victus.jpg" alt="Hp Victus">
+                <h3>HP Victus</h3>
+            </div>
+            <div class="image-item" data-brand="hp">
+                <img src="images/hp gaming.jpg" alt="Hp Pavilion Gaming">
+                <h3>HP Pavilion Gaming</h3>
+            </div>
+            <div class="image-item" data-brand="hp">
+                <img src="images/EliteBook.jpg" alt="Hp EliteBook">
+                <h3>HP EliteBook</h3>
+            </div>
+            <div class="image-item" data data-brand="hp">
+                <img src="images/S Pro.jpg" alt="Hp S Pro">
+                <h3>HP S Pro</h3>
+            </div>
+            <div class="image-item" data-brand="hp">
+                <img src="images/Pavilion plus.jpg" alt="Hp Pavilion Plus">
+                <h3>HP Pavilion Plus</h3>
+            </div>
+            <div class="image-item" data-brand="hp">
+                <img src="images/Omen.jpg" alt="Hp Omen">
+                <h3>Hp Omen</h3>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
