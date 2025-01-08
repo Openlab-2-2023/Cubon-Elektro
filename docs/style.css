@@ -44,8 +44,8 @@ header {
 }
 nav {
     display: flex;
-    gap: 10px;
-    justify-content: space-between;
+    gap: 165px;
+    justify-content: flex-start;
     background-color: #0070b6;
     padding: 10px;
     position: relative;
@@ -127,13 +127,24 @@ margin: 20px 0;
 
 .image-item {
 text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
 .image-item img {
-width: 150px; 
-height: auto; 
+width: 100%;
+max-width: 300px; 
+height: auto;
+border: 2px solid #ddd;
+border-radius: 5px;
+padding: 10px;
+background-color: #f9f9f9;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
-
+a {
+    text-decoration: none;
+}
 
 .image-container img {
     display: block;
@@ -141,3 +152,25 @@ height: auto;
     height: auto; 
     margin-bottom: 10px auto; 
 }
+
+* {
+    outline: none;
+  }
+  
+  
+  html, body {
+    outline: none;
+  }
+  
+ 
+  body {
+    user-select: none;
+    cursor: default;
+  }
+  
+  
+  h1, h2, h3, p, span {
+    outline: none;
+    user-select: none;
+  }
+  

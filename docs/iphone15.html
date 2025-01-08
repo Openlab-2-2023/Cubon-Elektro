@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 15</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <h3>Iphone 15 Black 128GB</h3>
+
+    <div class="gallery-container">
+        <button class="arrow prev" onclick="prevImage()">&#8249;</button>
+        <div class="gallery">
+          <div class="gallery-image">
+            <img src="images/Zpredu.jpg" alt="">
+          </div>
+          <div class="gallery-image">
+            <img src="images/Zozazu.jpg" alt="">
+          </div>
+        </div>
+        <button class="arrow next" onclick="nextImage()">&#8250;</button>
+      </div>
+      
+      <div class="modal" id="imageModal" style="display: none;">
+        <div class="modal-content">
+          <button class="modal-close" onclick="closeModal()">&times;</button>
+          <img id="modalImage" src="" alt="Enlarged Image">
+        </div>
+      </div>
+
+   
+    <div class="product-info">
+        <h2>Informácie o produkte</h2>
+        <p><strong>Farba:</strong> Čierna</p>
+        <p><strong>Kapacita:</strong> 128 GB</p>
+        <p><strong>Hlavné funkcie:</strong></p>
+        <ul>
+            <li>Dynamic Island displej pre interaktívne upozornenia</li>
+            <li>Výkonný čip A16 Bionic</li>
+            <li>48 MP hlavný fotoaparát s nočným režimom</li>
+            <li>Podpora 5G konektivity</li>
+            <li>Odolnosť voči vode a prachu (IP68)</li>
+        </ul>
+        <p>
+            Tento iPhone 15 ponúka pokročilé funkcie, vrátane výkonného procesora, brilantného OLED displeja a úžasných fotoaparátov, ktoré umožňujú profesionálnu kvalitu fotografií.
+        </p>
+    </div>
+
+    <script>
+      let currentImageIndex = 0;
+  
+  function updateGallery() {
+    const gallery = document.querySelector('.gallery');
+    gallery.style.transform = `translateX(-${currentImageIndex * 100}%)`;
+  }
+  
+  function prevImage() {
+    const images = document.querySelectorAll('.gallery-image');
+    currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : images.length - 1;
+    updateGallery();
+  }
+  
+  function nextImage() {
+    const images = document.querySelectorAll('.gallery-image');
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    updateGallery();
+  }
+  
+  function openModal(imageSrc) {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = imageSrc;
+    modal.style.display = 'flex';
+  }
+  
+  function closeModal() {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
+  
+    
+    document.activeElement.blur();
+  }
+  
+  
+  document.querySelectorAll('.gallery-image img').forEach((img) => {
+    img.addEventListener('click', () => openModal(img.src));
+  });
+ 
+  </script>
+  
+
+</body>
+</html>
