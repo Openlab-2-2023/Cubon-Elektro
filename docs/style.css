@@ -1,11 +1,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(115, 112, 112);
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: rgb(115, 112, 112);
     padding: 10px 20px;
 }
 .language-flags {
@@ -22,7 +23,7 @@ header {
 }
 .nav-links a {
     text-decoration: none;
-    color: #000;
+    color: #000000;
     font-weight: bold;
 }
 .search-bar {
@@ -35,7 +36,8 @@ header {
     font-size: 16px;
 }
 .cart-button {
-    background-color: #feca00;
+    color: white;
+    background-color: #0d00c4;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -46,19 +48,19 @@ nav {
     display: flex;
     gap: 165px;
     justify-content: flex-start;
-    background-color: #0070b6;
+    background-color: #000000;
     padding: 10px;
     position: relative;
 }
 nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px 20px;
-    background-color: #ffd800;
+    background-color:#0d00c4;
     font-weight: bold;
 }
 nav a.electronics {
-    background-color: #c6007e;
+    background-color: #0d00c4;
 }
 
 
@@ -68,7 +70,7 @@ nav a.electronics {
 .submenu {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: 1px solid #ddd;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -83,7 +85,7 @@ nav a.electronics {
     margin: 0 0 10px 0;
 }
 .submenu a {
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.9em;
     padding: 5px 0;
